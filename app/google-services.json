@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "457106647076",
+    "firebase_url": "https://smsforwarder-12b84.firebaseio.com",
+    "project_id": "smsforwarder-12b84",
+    "storage_bucket": "smsforwarder-12b84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457106647076:android:f25eac580deb3a38",
+        "android_client_info": {
+          "package_name": "com.feathertouch.smsforwarder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457106647076-njhpoajnamfses2gribdbnbqno0242l0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.feathertouch.smsforwarder",
+            "certificate_hash": "1b5f20f9986ba9cff9db9a091e4b59eae7bbcbe9"
+          }
+        },
+        {
+          "client_id": "457106647076-9fi9bq7oo0o574j20pcqrs2ke24eb5fm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqq2nynugrgLtCM038XGz2YaO3rSJL_Z0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457106647076-9fi9bq7oo0o574j20pcqrs2ke24eb5fm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
