@@ -129,6 +129,7 @@ isAlive = true;
         }
 
         if ( smsArray.length() > 0 ){
+            Log.wtf(TAG, smsArray.toString());
             smsUploader.uploadMessages(smsArray, new SMSNetworkUploader.SMSNetworkCallback() {
                 @Override
                 public void onSuccess() {

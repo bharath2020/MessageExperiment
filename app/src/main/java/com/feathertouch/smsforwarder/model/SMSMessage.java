@@ -1,5 +1,7 @@
 package com.feathertouch.smsforwarder.model;
 
+import android.util.Log;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -26,6 +28,8 @@ public class SMSMessage {
         this.number = this.number != null ? this.number : "";
         this.text = this.text != null ? this.text : "";
         this.uniqueId = -1L;
+
+        Log.wtf("SMS", "n: " + number + ", t: " + text);
 
     }
 

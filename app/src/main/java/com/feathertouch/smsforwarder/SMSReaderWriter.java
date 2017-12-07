@@ -3,6 +3,7 @@ package com.feathertouch.smsforwarder;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 import com.feathertouch.smsforwarder.database.SMSDatabaseContract;
 import com.feathertouch.smsforwarder.database.SMSDbHelper;
@@ -94,12 +95,13 @@ public class SMSReaderWriter {
             int count  =0;
             while( c.moveToNext() ){
 
-                String text = c.getString(c.getColumnIndex(SMSDatabaseContract.SMSEntry.COLUMN_NAME_TEXT));
-                String number = c.getString(c.getColumnIndex(SMSDatabaseContract.SMSEntry.COLUMN_NAME_NUMBER));
-               long timeStampInMillis = c.getLong(c.getColumnIndex(SMSDatabaseContract.SMSEntry.COLUMN_NAME_TIMESTAMP));
-                long ID = c.getLong(c.getColumnIndex(SMSDatabaseContract.SMSEntry._ID));
+                String text = c.getString(2);
+                String number = c.getString(1);
+               long timeStampInMillis = c.getLong(3);
+                long ID = c.getLong(0);
 
-                SMSMessage message = new SMSMessage(text,number,ID);
+                SMSMessage message = new SMSMessage(number,text,ID);
+                Log.wtf("SMSReaderWriter", "DB GET: " + message.toString());
                 message.timestampInMillis = timeStampInMillis;
                 messages[count++] = message;
 
